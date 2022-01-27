@@ -1,11 +1,6 @@
 $('#currentDay').text(moment().format('dddd, MMMM Do'));
 
-
-//color code each time block based on past, present, or future grey, red, green
-//add event listener to each time block to add event to local storage
-
-//holds every text input value in an array
-
+//stores array of notes to local storage
 $( "form" ).submit(function( event ) {
     event.preventDefault();
     console.log('form submitted');
@@ -15,4 +10,10 @@ $( "form" ).submit(function( event ) {
     });
     console.log(array);
     localStorage.setItem('array', JSON.stringify(array));
+});
+
+// loads arrays into text fields on load
+let array = JSON.parse(localStorage.getItem('array'));
+$('input').each(function(index, element) {
+    element.value = array[index];
 });
