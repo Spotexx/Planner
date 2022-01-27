@@ -8,4 +8,4 @@ This is a work day scheduler that can aid you in planning out your day. Simply t
 Make sure to click [here](https://spotexx.github.io/Planner/) to view the finished LIVE copy of the assignment.
 
 ## screenshot 
-![Website Screenshot](./assets/images/screenshot.png)
+![Website Screenshot](./Assets/images/screenshot.png)
